@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Memory</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="border-box game-area">
+            <div class="border-box game-board">
+                <div class="border-box card closed" tabindex="1">
+                </div>
+                <div class="border-box card closed" tabindex="2">
+                </div>
+                <div class="border-box card closed" tabindex="3">
+                </div>
+                <div class="border-box card closed" tabindex="4">
+                </div>
+                <div class="border-box card closed" tabindex="5">
+                </div>
+                <div class="border-box card closed" tabindex="6">
+                </div>
+                <div class="border-box card closed" tabindex="7">
+                </div>
+                <div class="border-box card closed" tabindex="8">
+                </div>
+                <div class="border-box card closed" tabindex="9">
+                </div>
+                <div class="border-box card closed" tabindex="10">
+                </div>
+                <div class="border-box card closed" tabindex="11">
+                </div>
+                <div class="border-box card closed" tabindex="12">
+                </div>
+                <div class="border-box card closed" tabindex="13">
+                </div>
+                <div class="border-box card closed" tabindex="14">
+                </div>
+                <div class="border-box card closed" tabindex="15">
+                </div>
+                <div class="border-box card closed" tabindex="16">
+                </div>
+                <div tabindex= "17" class="border-box card restart"><p class="restart-text">Restart</p></div>
+            </div>
+            <div class="game-logotype">
+                <h1 class="title">Color Memory</h1>
+            </div>
+            <div class="border-box game-info">
+                <p class="rounds">Total rounds: <span class="number-of-rounds"></span></p>
+                <p class="points">Total points: <span class="number-of-points"></span></p>
+            </div>
+
+            <div class="game-over hide">
+                <h1>GAME OVER</h1>
+                    <form>
+                        <label>Name:</label><input id="playerName" type="text" /></br></br>
+                        <label>E-mail:</label><input id="playerMail" type="text" /></br></br>
+                        <button id="submitPoints">Send data</button>
+                    </form>
+                <span class="error-message hide"> Check fields!</span>
+            </div>
+            <div class="game-ranking hide">
+                <h3>RANKING</h3>
+                <div class="ranking">
+                    <table id="tableRanking">
+                        <tbody id="rankingList">
+                            <tr class="header">
+                                <th>Name</th>
+                                <th>E-mail</th>
+                                <th>Points</th>
+                                <th>Rounds</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="startNewGame">Start New Game</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="frontend/jquery-1.11.2.js"></script>
+        <script src="frontend/script.js"></script>
+    </body>
+</html>
